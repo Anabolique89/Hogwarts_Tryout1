@@ -1,62 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hogwarts Studentlist</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="only screen and (min-width:100px) and (max-width:500px)"
-      href="mobilestyle.css"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="main-crest"><img src="imgs/houses.png"</div>
-    </header>
-    <h1 class="page-title">Hogwarts Studentlist</h1>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Hogwarts Studentlist</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width:100px) and (max-width:500px)" href="mobilestyle.css" />
+</head>
 
-    <main></main>
-    <div class="wrapper">
-      <template>
-        <article id="student">
-          <ul>
-            <li class="box">
-              <h1 class="FULLNAME">FULLNAME</h1>
-              <h1 class="LASTNAME">LASTNAME</h1>
-              <p class="HOUSE">HOUSE</p>
-              <button>Details</button>
-            </li>
-          </ul>
-        </article>
-      </template>
-    </div>
+<body>
+	<header class="header">
+		<div class="main-crest"><img src="imgs/houses.png"></div>
+	</header>
+	<h1 class="page-title">Hogwarts Studentlist</h1>
 
-    <footer></footer>
-    <div class="modal-background hide">
-      <div class="modal-content" data-theme="">
-        <h3 class="modal-name">NAME</h3>
-        <h3 class="last-name">LASTNAME</h3>
-        <img src="" alt="" class="modal-image" />
-        <p class="modal-description">Description</p>
-        <!-- <p class="modal-nickname">Description</p>  -->
+	<main></main>
+	<div class="wrapper">
+		<template>
+			<article id="student">
+				<ul>
+					<li class="box">
+						<h1 class="FULLNAME">FULLNAME</h1>
+						<h1 class="LASTNAME">LASTNAME</h1>
+						<p class="HOUSE">HOUSE</p>
+						<button>Details</button>
+					</li>
+				</ul>
+			</article>
+		</template>
+	</div>
 
-        <h4 class="modal-price"></h4>
-        <label id="theme-changer">
-          Choose theme
-          <select name="theme" id="theme">
-            <option value="">Select</option>
-            <option value="Gryffindor">Gryffindor theme</option>
-            <option value="Hufflepuff">Hufflepuff theme</option>
-            <option value="Ravenclaw">Ravenclaw theme</option>
-            <option value="Slytherin">Slytherin theme</option>
-          </select>
-        </label>
-      </div>
-    </div>
+	<footer></footer>
+	<div class="modal-background hide">
+		<div class="modal-content" data-theme="">
+			<h3 class="modal-name">NAME</h3>
+			<h3 class="last-name">LASTNAME</h3>
+			<img src="" alt="" class="modal-image" />
+			<p class="modal-description">Description</p>
+			<!-- <p class="modal-nickname">Description</p>  -->
 
-    <script src="script.js"></script>
-  </body>
-</html>
+			<h4 class="modal-price"></h4>
+			<label id="theme-changer">
+				Choose theme
+				<select name="theme" id="theme">
+					<option value="">Select</option>
+					<option value="Gryffindor">Gryffindor theme</option>
+					<option value="Hufflepuff">Hufflepuff theme</option>
+					<option value="Ravenclaw">Ravenclaw theme</option>
+					<option value="Slytherin">Slytherin theme</option>
+				</select>
+			</label>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body></html>
