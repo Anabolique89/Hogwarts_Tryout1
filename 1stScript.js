@@ -40,6 +40,7 @@ fetch("https://petlatkea.dk/2020/hogwarts/students.json")
 				house: ""
 			};
 			//const student = Object.create(Student);
+			//add attributes - separate array
 			let fullname = jsonObject.fullname.trim();
 			fullname = fullname.toLowerCase();
 			let firstSpace;
@@ -53,7 +54,6 @@ fetch("https://petlatkea.dk/2020/hogwarts/students.json")
 			student.firstName =
 				student.firstName.charAt(0).toUpperCase() +
 				student.firstName.substring(1).toLowerCase();
-
 
 			// editing lastName
 			if (fullname.indexOf(" ") > 0) {
@@ -85,6 +85,7 @@ fetch("https://petlatkea.dk/2020/hogwarts/students.json")
 			house = house.toLowerCase();
 			let bigHouse = house.charAt(0).toUpperCase() + house.substring(1);
 			let firstName = data.firstName;
+			//....... add more stuff here ......
 			//console.log(bigHouse);
 			student.firstName = firstName;
 			student.lastName = lastName;
@@ -95,8 +96,7 @@ fetch("https://petlatkea.dk/2020/hogwarts/students.json")
 
 			allStudents.push(student);
 		});
-		//console.log(data.student);
-		console.log(allStudents);
+		console.log(data.student);
 
 		data.forEach(showStudents);
 	});
